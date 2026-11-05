@@ -16,13 +16,7 @@ Guide page: https://ai.ugreen.com/pages/hackathon-starter-kit
 
 Uploadable skill directory: `receipt-shoebox/`
 
-Static check (bundled checker):
-
-```bash
-node kit-ref/scripts/check-skill.mjs receipt-shoebox
-```
-
-Latest result: `static-pass` (0 errors, 0 warnings). Saved in `check-result.json`.
+Static check was run with the official free UGOS Skill Creation Tool checker (downloaded separately from the starter-kit page). Latest result: `static-pass` (0 errors, 0 warnings). Saved in `check-result.json`.
 
 Round 1 ZIP: `receipt-shoebox-round1.zip` (skill folder only).
 
