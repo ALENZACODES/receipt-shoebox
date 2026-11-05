@@ -1,0 +1,30 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "receipt-shoebox"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/missing-document-checklist.md",
+      "sha256": "17dbd56b8204b8cb8d7ad3df64d81fc0f88f0e673c90e6d6ca2d24860cba177f"
+    },
+    {
+      "path": "references/year-folder-layout.md",
+      "sha256": "251254f4bdd172a354f3473d32968422894aedf6d655bf19e5600c909d8d3374"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "ce954309c158ae3682487977ec760ac21b5d484e80b653353765ce43c1157303"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}
