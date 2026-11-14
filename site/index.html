@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Receipt Shoebox · dry run of a UGREEN AI NAS Skill</title>
+<meta name="description" content="Dry run of the Receipt Shoebox Skill: sort receipts, bills and tax slips into a year-end folder, with an approval step and a missing slip list.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Receipt Shoebox</h1>
+  <p>A UGREEN AI NAS Skill that turns one messy folder of receipts, bills and tax slips into a tidy year-end folder, and tells you which slips are still missing. This page is a dry run on made-up sample files, so you can see each step and the approval gate without a NAS.</p>
+</header>
+<main>
+  <div class="grid">
+    <section class="card" aria-label="Inputs">
+      <h2>1. Inputs</h2>
+      <label for="src">source_path</label>
+      <input id="src" type="text">
+      <label for="dst">destination_path</label>
+      <input id="dst" type="text">
+      <label for="year">tax_year</label>
+      <select id="year"><option>2024</option><option selected>2025</option><option>2026</option></select>
+      <label>needed_types</label>
+      <div class="types" id="types"></div>
+      <label for="scenario">Sample folder</label>
+      <select id="scenario">
+        <option value="full">Mixed shoebox (9 files)</option>
+        <option value="empty">Empty folder</option>
+      </select>
+      <button class="primary" id="run">Build plan</button>
+    </section>
+    <section class="card" aria-live="polite">
+      <h2>2. Plan <span id="status" class="status"></span></h2>
+      <div id="plan" class="muted">Press Build plan to run steps 2 to 6.</div>
+      <div id="actions"></div>
+      <div id="result"></div>
+    </section>
+  </div>
+  <section class="card" style="margin-top:24px">
+    <h2>How the Skill works on a NAS</h2>
+    <p class="muted">file-agent finds candidates with ug-filesystem ls and find. document-agent runs ug-document extract with the receipt, invoice or expense schema and dedupe on. photo-agent runs ug-photo vision-ocr on images with no text, and document-agent reads that OCR text. Nothing is copied until you approve. Then file-agent copies with ug-filesystem mkdir and cpmv, and knowledge-agent saves the summary with ug-knowledge save-text. Source files are never moved or deleted.</p>
+    <p class="muted">Read the Skill: <a href="https://github.com/ALENZACODES/receipt-shoebox/blob/main/receipt-shoebox/SKILL.md">SKILL.md</a>. Slip names come from the Canada Revenue Agency page <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/preparing-your-taxes.html">Preparing to do your taxes</a>. This tool sorts files; it does not give tax advice.</p>
+  </section>
+</main>
+<footer>Built by John Khan, Toronto, Ontario. Code: <a href="https://github.com/ALENZACODES/receipt-shoebox">github.com/ALENZACODES/receipt-shoebox</a>. All sample files on this page are made up.</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

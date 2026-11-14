@@ -1,0 +1,18 @@
+{
+  "note": "Synthetic sample files. Names, payers and amounts are made up for the dry run.",
+  "sourcePath": "/volume1/Home/Scans/Shoebox",
+  "destinationPath": "/volume1/Home/Taxes/2025",
+  "taxYear": 2025,
+  "neededTypes": ["T4", "T5", "RRSP contribution receipt", "T2202", "Medical receipt"],
+  "sourceFiles": [
+    {"path": "/volume1/Home/Scans/Shoebox/t4-example-employer.pdf", "extract": {"type": "T4", "payer": "Example Employer Inc.", "date": "2025-12-31", "total": 61250.00, "currency": "CAD"}},
+    {"path": "/volume1/Home/Scans/Shoebox/rrsp-receipt-feb.pdf", "extract": {"type": "RRSP contribution receipt", "payer": "Sample Trust Co.", "date": "2025-02-14", "total": 3000.00, "currency": "CAD"}},
+    {"path": "/volume1/Home/Scans/Shoebox/rrsp-receipt-feb-copy.pdf", "extract": {"type": "RRSP contribution receipt", "payer": "Sample Trust Co.", "date": "2025-02-14", "total": 3000.00, "currency": "CAD"}},
+    {"path": "/volume1/Home/Scans/Shoebox/pharmacy-march.jpg", "extract": null, "ocrText": "Sample Pharmacy 2025-03-08 Total 42.17", "ocrExtract": {"type": "Medical receipt", "payer": "Sample Pharmacy", "date": "2025-03-08", "total": 42.17, "currency": "CAD"}},
+    {"path": "/volume1/Home/Scans/Shoebox/hydro-november.pdf", "extract": {"type": "Utility bill", "payer": "Sample Hydro", "date": "2025-11-20", "total": 88.40, "currency": "CAD"}},
+    {"path": "/volume1/Home/Scans/Shoebox/dentist-2024.pdf", "extract": {"type": "Medical receipt", "payer": "Sample Dental", "date": "2024-12-02", "total": 180.00, "currency": "CAD"}},
+    {"path": "/volume1/Home/Scans/Shoebox/blurry-photo.png", "extract": null, "ocrText": "", "ocrExtract": null},
+    {"path": "/volume1/Home/Scans/Shoebox/note-from-bank.pdf", "extract": {"type": null, "payer": "Sample Bank", "date": "2025-06-01", "total": null, "currency": null}},
+    {"path": "/volume1/Home/Scans/Shoebox/holiday-video.mp4", "extract": null}
+  ]
+}

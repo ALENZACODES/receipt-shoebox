@@ -5,20 +5,28 @@
     "skillName": "receipt-shoebox"
   },
   "catalog": {
-    "checkedVersion": "2.0.0"
+    "checkedVersion": "2.2.0"
   },
   "files": [
     {
+      "path": "references/canada-slip-types.md",
+      "sha256": "33d9cb77d372954c13a3cd7ccf64387a4eef8aa641e70d3839a9eaa265c5b9d6"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "82daab4de38c77f681f6be48040008644e8eaf388bdb92df5ed0336639b70b9c"
+    },
+    {
       "path": "references/missing-document-checklist.md",
-      "sha256": "17dbd56b8204b8cb8d7ad3df64d81fc0f88f0e673c90e6d6ca2d24860cba177f"
+      "sha256": "227437956388ea76c295823eab35310dde1ee501132d25b84ba30003c0af8cc4"
     },
     {
       "path": "references/year-folder-layout.md",
-      "sha256": "251254f4bdd172a354f3473d32968422894aedf6d655bf19e5600c909d8d3374"
+      "sha256": "8efaa8627d5c8b725bf014b93e16981f1793d799990e298e40baa11a8e8223a7"
     },
     {
       "path": "SKILL.md",
-      "sha256": "ce954309c158ae3682487977ec760ac21b5d484e80b653353765ce43c1157303"
+      "sha256": "0666543823df8736b1739bb6293f704d18ef5e4054eee21a3d0ad56d9ffbfa9d"
     }
   ],
   "summary": {
