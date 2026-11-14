@@ -17,7 +17,7 @@ Cloud receipt apps upload private tax papers and focus on spending. Receipt Shoe
 Discovery: file-agent with ug-filesystem ls and find. Extraction: document-agent with ug-document extract, receipt, invoice or expense schema, dedupe on. Images without text: photo-agent with ug-photo vision-ocr, then a second extract. Copying: file-agent with ug-filesystem mkdir and cpmv. Summary: knowledge-agent with ug-knowledge save-text.
 
 ### 7. What is your technical approach?
-One SKILL.md orchestration with four linked references, written to the Uliya Skill Development Standard. Inputs: source_path, destination_path, tax_year. Every state change waits for approval. Each step passes only verified upstream paths; empty results stop dependent steps. Models are the NAS's own extraction and OCR. No data leaves the NAS and no credentials are stored.
+One SKILL.md orchestration with four linked references, written to the Uliya Skill Development Standard. Inputs: source_path, destination_path, tax_year. Every state change waits for approval. Each step passes only verified upstream paths; empty results stop dependent steps. Extraction and OCR run on the NAS's own services. No data leaves the NAS and no credentials are stored.
 
 ### 8. What have you built so far? What is not built yet? What still needs testing on a NAS?
 Built: the complete Skill package, which passes the official checker (uliya-skill-kit 0.7.7, static-pass, 0 diagnostics), and a public browser dry run of the same rules with automated tests. Not built: rename rules and multi-year batches. Needs NAS testing: real extract fields on scanned slips, OCR quality on phone photos, and the saved summary path.

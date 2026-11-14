@@ -2,7 +2,7 @@
 
 ## Third-party components
 
-None. The Skill is plain Markdown. It calls only UGREEN AI NAS experts listed in the official capability catalog: file-agent (ug-filesystem), document-agent (ug-document), photo-agent (ug-photo), and knowledge-agent (ug-knowledge). It was written to the Uliya Skill Development Standard in the official UGREEN Skill Developer Package (uliya-skill-kit 0.7.7) and checked with its bundled checker. The kit stays under UGREEN's own terms and is not included here.
+None are bundled. The Skill is plain Markdown. It calls only UGREEN AI NAS experts listed in the official capability catalog: file-agent (ug-filesystem), document-agent (ug-document), photo-agent (ug-photo), and knowledge-agent (ug-knowledge). It was written to the Uliya Skill Development Standard in the official UGREEN Skill Developer Package (uliya-skill-kit 0.7.7) and checked with its bundled checker. The kit stays under UGREEN's own terms and is not included here.
 
 ## Principal functionality developed for this Hackathon
 
