@@ -44,6 +44,39 @@ Latest result: `static-pass`, 0 errors, 0 warnings, catalog 2.2.0. GitHub Action
 
 A static pass does not prove install or runtime on a NAS; that is what the finalist testing day is for. Extraction quality depends on the scans. Partial extracts go to Unclear instead of being guessed. The Skill sorts files and gives no tax advice. Slip names come from the Canada Revenue Agency page "Preparing to do your taxes".
 
+## Project structure
+
+```text
+receipt-shoebox/
+├── .github/
+│   └── workflows/                    # CI workflows (1 file)
+├── proposal/                         # Proposal answers and PDF
+│   ├── answers.md
+│   └── receipt-shoebox-proposal.pdf
+├── receipt-shoebox/                  # The skill package
+│   ├── references/                   # Reference notes used by the skill (4 files)
+│   └── SKILL.md
+├── scripts/
+│   ├── build_pdf.py                  # Renders the proposal PDF
+│   └── build_zip.py                  # Builds the skill ZIP with fixed timestamps
+├── site/                             # Demo page
+│   ├── app.js                        # Interface logic
+│   ├── index.html                    # Page markup
+│   ├── planner.mjs                   # Dry run of the workflow on synthetic files
+│   ├── samples.json                  # Synthetic sample files
+│   └── style.css                     # Styles
+├── tests/                            # Automated tests
+│   ├── test_package.mjs
+│   └── test_planner.mjs
+├── .gitignore
+├── check-result.json
+├── DEMO-SCRIPT.md                    # Demo video script
+├── DEVPOST.md                        # Submission write-up
+├── LICENSE                           # Licence
+├── README.md                         # This file
+└── receipt-shoebox-round1.zip        # Packaged skill, Round 1
+```
+
 ## License
 
 MIT for this project. The UGREEN kit is not included and stays under UGREEN's own terms.
